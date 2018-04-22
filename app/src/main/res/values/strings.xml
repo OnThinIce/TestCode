@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">TestApplication</string>
+    <string name="start_app">
+        Activity: onCreate()\n
+        Fragment: onAttach()\n
+        Fragment: onCreate()\n
+        Fragment: onCreateView()\n
+        Fragment: onViewCreated()\n
+        Fragment: onActivityCreated()\n
+        Fragment: onStart()\n
+        Activity: onStart()\n
+        Activity: onResume()\n
+        Fragment: onResume()
+    </string>
+
+    <string name="exit_app">
+        Fragment: onPause()\n
+        Activity: onPause()\n
+        Fragment: onStop()\n
+        Activity: onStop()\n
+        Fragment: onDestroyView()\n
+        Fragment: onDestroy()\n
+        Fragment: onDetach()\n
+        Activity: onDestroy()
+    </string>
+</resources>

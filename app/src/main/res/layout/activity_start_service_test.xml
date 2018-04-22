@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".ServiceTestActivity">
+
+    <Button
+        android:id="@+id/button_start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="startService(intent)"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/button_stop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="stopService(intent)"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/button_bind"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="bindService(intent,connection,BIND_AUTO_CREATE)"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/button_unbind"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:text="unbindService(connection)"
+        android:textAllCaps="false" />
+
+    <ImageView
+        android:id="@+id/image_life"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/service_life"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/image_bind_life"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/bind_service"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:textColor="#ff0000"
+        android:visibility="gone"
+        android:text="start和bind都调用过了，想要destory Service的话必须stop和unbind也都调用"/>
+
+</LinearLayout>
