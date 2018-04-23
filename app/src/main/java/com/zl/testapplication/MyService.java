@@ -9,20 +9,19 @@ import android.util.Log;
 public class MyService extends Service {
 
     private DownloadBinder mDownloadBinder = new DownloadBinder();
+
     class DownloadBinder extends Binder {
-        public void startDownload(){
+        public void startDownload() {
             Log.d("mTag", "DownloadBinder(MyService)：startDownload()");
         }
 
-        public int getProgress(){
-
+        public int getProgress() {
             Log.d("mTag", "DownloadBinder(MyService)：getProgress()");
             return 0;
         }
     }
 
     public MyService() {
-
         Log.d("mTag", "MyService（构造方法）：MyService()");
     }
 

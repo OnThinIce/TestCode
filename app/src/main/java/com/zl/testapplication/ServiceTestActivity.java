@@ -75,10 +75,11 @@ public class ServiceTestActivity extends AppCompatActivity {
             case R.id.button_stop:
                 stopService(new Intent(ServiceTestActivity.this, MyService.class));
                 break;
-            case R.id.button_bind:bindService(
-                    new Intent(ServiceTestActivity.this, MyService.class),
-                    mServiceConnection,
-                    BIND_AUTO_CREATE);
+            case R.id.button_bind:
+                bindService(
+                        new Intent(ServiceTestActivity.this, MyService.class),
+                        mServiceConnection,
+                        BIND_AUTO_CREATE);
 
                 imageBindLife.setVisibility(View.VISIBLE);
                 imageLife.setImageResource(R.drawable.bind_service);
